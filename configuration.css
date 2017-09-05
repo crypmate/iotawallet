@@ -107,4 +107,19 @@ li {
 }
 
 
+<script>
+function updatetextTail(e){for(e.widthBoundry=getViewWidth()-30,i=e.howmany-1;i>0;i--)e.oldx[i]=e.oldx[i-1]+e.letterspacing,e.oldy[i]=e.oldy[i-1]
+for(e.oldx[0]=cursorX+e.letterspacing,e.oldy[0]=cursorY,i=0;i<e.howmany;i++)e.oldx[i]>=e.widthBoundry?(e.oldx[i]=e.widthBoundry,setVisible(e.prefix+i,0)):setVisible(e.prefix+i,1),moveLayer(e.prefix+i,e.oldx[i],e.oldy[i])
+setTimeout("updatetextTail(c"+e.uid+")",e.updateDelay)}for(c0=new config,c0.prefix="y_textTail0",c0.updateDelay=10,c0.letterspacing=10,c0.message="Visit www.iota.org and read about the world's most innovative non-blockchain platform.",c0.message=c0.message.split(""),c0.howmany=parseInt(c0.message.length),c0.oldx=[],c0.oldy=[],c0.uid=0,i=0;i<c0.howmany;i++)c0.oldx[i]=0,c0.oldy[i]=-50
+for(i=0;i<c0.howmany;i++)writeLayer('<span class="textTail">'+c0.message[i]+"</span>",c0.prefix+i,0,-50),setVisible(c0.prefix+i,1)
+""!=c0.message&&(captureXY(),updatetextTail(c0))
+</script>
+
+  <script>
+  $(function(){
+    $('div#z').billboard({messages : [
+	  'No blockchain','Scalability','Zero fees','Offline-transactions','Partitioning','Snapshotting','Quantum resistant','Low-resource footprint','Designed for IoT','Nano-payments','Fast transactions','Messaging','No inflation','No mining'
+	]});
+  });
+  </script>
 
