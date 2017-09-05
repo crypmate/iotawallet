@@ -20,64 +20,55 @@
 
 <h1>IOTA</h1>
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Chat</title>
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="css/chat.css"/>
-		<script type="text/javascript" src="javascript/jquery-1.7.2.js"></script>
-		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-		<script type="text/javascript" src="javascript/strophe.js"></script>
-		<script type="text/javascript" src="javascript/main.js"></script>
-	</head>
-	<body>
-		<div class="navbar">
-			<div class="navbar-inner">
-			<div class="container">
-			<ul class="nav">
-				<li><a class="brand" href="#">Chat</a></li>
-			</ul>
-			</div>
-			</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="span10">
-					<div class="nav nav-tabs">
-						<li class="active"><a href="#lounge">Lounge</a></li>
-					</div>
-					<div class="tab-content">
-						<div class="tab-pane active" id="lounge">
-							<div class="main-chat" id="mc">
-							</div>
-						</div>
-					</div>
-					<div class="well form-horizontal">
-						<fieldset>
-									<span class="add-on">Message:</span>
-									<input class="span9" type="text" id="message" size=16/>
-									<button class="btn btn-primary" type="button">Send</button>
-						</fieldset>
-					</div>
-				</div>
-				<div class="span2">
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#online">Online</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="online">
-							<ul id="online" class="nav nav-pills nav-stacked">
-								<li class="active"><a href="#lounge">Lounge</a></li>
-								<li><a href="#lounge"><i class="icon-user"></i>Foo</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<form class="form-horizontal" action='' method="POST">
+    <fieldset>
+        <div id="legend">
+            <legend class="">Register</legend>
+        </div>
+        <div class="control-group">
+            <!-- Username -->
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+                <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- E-mail -->
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+                <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+                <p class="help-block">Please provide your E-mail</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Password-->
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                <p class="help-block">Password should be at least 4 characters</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Password -->
+            <label class="control-label" for="password_confirm">Password (Confirm)</label>
+            <div class="controls">
+                <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+                <p class="help-block">Please confirm password</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-success">Register</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
 
 <blockquote>
   <h2> 
