@@ -11,7 +11,7 @@ body  {
 
 .startseite {
 	background-attachment: fixed; alternativ: scroll;
-	background-image: url(images/nordsee.jpg);
+	background-image: url(greybackground.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%; 
 }
