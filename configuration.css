@@ -17,7 +17,7 @@ body  {
 }
 
 a {
-	color:#BEBEBE;
+	color:#242424;
 }
 
 a:hover {
@@ -79,7 +79,7 @@ li {
 
 #menueleiste li {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-	background-color: #BEBEBE;
+	background-color: #242424;
 	list-style-type: none;
 	border-radius: 20px;
 	text-align: center;
@@ -102,7 +102,7 @@ li {
 	background-color:#FFFFFF;
 	text-decoration: none;
 	border-radius: 20px;
-	color: #BEBEBE;
+	color: #242424;
 }
 
 
